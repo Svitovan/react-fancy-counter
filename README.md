@@ -1,1 +1,3 @@
 ## Fancy Counter
+
+Vite
