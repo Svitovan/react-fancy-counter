@@ -5,7 +5,7 @@ import ResetButton from "./ResetButton";
 
 function Card() {
   return (
-    <div>
+    <div className="card">
       <Title />
       <Count number={7}/>
       <ResetButton />
