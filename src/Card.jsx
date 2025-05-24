@@ -2,14 +2,16 @@ import Count from "./Count";
 import CountButtons from "./CountButtons";
 import Title from "./Title";
 import ResetButton from "./ResetButton";
+import { useState } from "react";
 
 function Card() {
+  const [count, setCount] = useState(0); 
   return (
     <div className="card">
       <Title />
-      <Count number={7}/>
+      <Count count={count}/>
       <ResetButton />
-      <CountButtons />
+      <CountButtons setCount = {setCount} />
     </div>
   );
 }

@@ -1,7 +1,8 @@
-function Count({number}) {
-     // const countNumber = props.number;
 
-     return <p className="count">{number}</p>
+
+function Count({count}) {
+
+     return <p  className="count">{count}</p>
 }
 
 export default Count;  
