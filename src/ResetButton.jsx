@@ -1,10 +1,15 @@
-import {ResetIcon } from '@radix-ui/react-icons';
+import { ResetIcon } from "@radix-ui/react-icons";
 
-function resetButton() {
+function resetButton({ setCount }) {
   return (
-     <button className="reset-btn">
-      <ResetIcon className='reset-btn-icon'/>
-     </button>
+    <button
+      onClick={() => {
+        setCount(0);
+      }}
+      className="reset-btn"
+    >
+      <ResetIcon className="reset-btn-icon" />
+    </button>
   );
 }
 
