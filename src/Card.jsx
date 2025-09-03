@@ -9,15 +9,11 @@ function Card() {
   return (
     <div className="card">
       <Title />
-<<<<<<< HEAD
+
       <Count count={count}/>
       <ResetButton setCount={setCount}/>
       <CountButtons setCount = {setCount} />
-=======
-      <Count count={count} />
-      <ResetButton setCount={setCount} />
-      <CountButtons setCount={setCount} />
->>>>>>> 87669412636a5d18d16f1e2840beff2b7f073bab
+
     </div>
   );
 }
