@@ -6,13 +6,14 @@ import { useState } from "react";
 
 function Card() {
   const [count, setCount] = useState(0);
-  return (
-    <div className="card">
-      <Title />
+  const locked = count === 7 ? true : false;
 
+  return (
+    <div className={`card ${locked ? 'card--limit' : ''}`}>
+      <Title locked={locked} />
       <Count count={count} />
       <ResetButton setCount={setCount} />
-      <ButtonContainer setCount={setCount} />
+      <ButtonContainer setCount={setCount} locked={locked} />
     </div>
   );
 }
